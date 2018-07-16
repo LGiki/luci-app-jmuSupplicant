@@ -9,8 +9,8 @@ function index()
     -- end
     entry({"admin", "services", "jmusupplicant"},
         alias("admin", "services", "jmusupplicant", "general"),
-        _("jmusupplicant"), 10).dependent = true
+        _("jmuSupplicant"), 10).dependent = true
 
-    entry({"admin", "services", "jmusupplicant", "general"}, cbi("jmusupplicant/general"), _("jmusupplicant Settings"), 10).leaf = true
-    entry({"admin", "services", "jmusupplicant", "log"}, cbi("jmusupplicant/log"), _("jmusupplicant LOG"), 20).leaf = true
+    entry({"admin", "services", "jmusupplicant", "general"}, cbi("jmusupplicant/general"), _("jmuSupplicant Settings"), 10).leaf = true
+    entry({"admin", "services", "jmusupplicant", "log"}, cbi("jmusupplicant/log"), _("jmuSupplicant LOG"), 20).leaf = true
 end
