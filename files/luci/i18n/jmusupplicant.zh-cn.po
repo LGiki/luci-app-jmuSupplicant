@@ -54,3 +54,6 @@ msgstr "服务"
 
 msgid "Internet Service Provider"
 msgstr "互联网提供商"
+
+msgid "Midnight Mode"
+msgstr "夜间不断网模式"

@@ -17,14 +17,17 @@ run_jmusupplicant()
         local service
         local ipaddr
         local mask
+        local midnight
         
         config_get service $1 service
         config_get ipaddr $1 ipaddr
         config_get mask $1 mask
+        config_get_bool midnight $1 midnight
 
         if [ "$service" != "" ]; then cmd=$cmd" -s"$service;fi
         if [ "$ipaddr" != "" ]; then cmd=$cmd" --ip "$ipaddr;fi
         if [ "$mask" != "" ]; then cmd=$cmd" --mask "$mask;fi
+        if [ $midnight ]; then cmd=$cmd" -n";fi
 
         jmusupplicant -u$username -p$password --interface_card $ifname $cmd
     fi

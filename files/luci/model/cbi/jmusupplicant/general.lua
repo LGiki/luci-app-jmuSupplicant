@@ -7,6 +7,7 @@ s.addremove = false
 s.anonymous = true
 
 enable = s:option(Flag, "enable", translate("Enable"))
+midnight = s:option(Flag, "midnight", translate("Midnight Mode"))
 name = s:option(Value, "username", translate("Username"),translate("The username given to you by your network administrator"))
 pass = s:option(Value, "password", translate("Password"), translate("The password you set or given to you by your network administrator"))
 pass.password = true
