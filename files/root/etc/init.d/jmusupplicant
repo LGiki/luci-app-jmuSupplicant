@@ -25,8 +25,8 @@ run_jmusupplicant()
         config_get_bool midnight $1 midnight
 
         if [ "$service" != "" ]; then cmd=$cmd" -s"$service;fi
-        if [ "$ipaddr" != "" ]; then cmd=$cmd" --ip "$ipaddr;fi
-        if [ "$mask" != "" ]; then cmd=$cmd" --mask "$mask;fi
+        if [ "$ipaddr" != "0.0.0.0" ]; then cmd=$cmd" --ip "$ipaddr;fi
+        if [ "$mask" != "0.0.0.0" ]; then cmd=$cmd" --mask "$mask;fi
         if [ $midnight ]; then cmd=$cmd" -n";fi
 
         jmusupplicant -u$username -p$password --interface_card $ifname $cmd

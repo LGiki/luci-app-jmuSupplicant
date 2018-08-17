@@ -4,12 +4,6 @@ msgstr "Content-Type: text/plain; charset=UTF-8\n"
 msgid "jmuSupplicant Settings"
 msgstr "jmuSupplicant 设置"
 
-msgid "jmuSupplicant LOG"
-msgstr "jmuSupplicant 日志"
-
-msgid "Log file:/tmp/mentohust.log"
-msgstr "日志文件：/tmp/mentohust.log"
-
 msgid "Configure jmuSupplicant 802.11x."
 msgstr "配置jmuSupplicant 802.11x验证。"
 
@@ -17,13 +11,13 @@ msgid "Normal Settings"
 msgstr "常规设置"
 
 msgid "The username given to you by your network administrator"
-msgstr "您的用户名(或管理员分配的用户名)"
+msgstr "您的用户名"
 
 msgid "The password you set or given to you by your network administrator"
-msgstr "您的密码(或管理员分配的密码)"
+msgstr "您的密码"
 
 msgid "Physical interface of WAN"
-msgstr "WAN口的物理接口"
+msgstr "WAN的物理接口"
 
 msgid "IP Address"
 msgstr "IP地址"
@@ -35,7 +29,7 @@ msgid "NetMask"
 msgstr "子网掩码"
 
 msgid "NetMask, it doesn't matter"
-msgstr "掩码，无关紧要"
+msgstr "子网掩码，一般无需修改"
 
 msgid "Campus Network"
 msgstr "教育网"
