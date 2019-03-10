@@ -39,9 +39,11 @@ OpenWrt/LEDE LuCI for jmuSupplicant
 
  可执行文件  | 可选 | 功能        
  ------------|------|-------------
- `jmuSupplicant` | 否   | 进行802.11x验证
+ `jmusupplicant` | 否   | 进行802.11x验证
 
 注: 可执行文件需要在 `$PATH` 环境变量所表示的搜索路径中, 可被正常调用，否则不会出现LUCI界面.
+
+可执行文件必须命名为 `jmusupplicant`，建议将其放到 `/bin/jmusupplicant`。
 
 配置
 ---
